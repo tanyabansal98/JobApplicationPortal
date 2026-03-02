@@ -1,3 +1,0 @@
-2026-01-23T18:49:13.205-05:00  INFO 29804 --- [job-application-portal] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
-2026-01-23T18:49:13.224-05:00  INFO 29804 --- [job-application-portal] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
-2026-01-23T18:49:13.230-05:00  INFO 29804 --- [job-application-portal] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
