@@ -7,6 +7,7 @@ import com.job.portal.util.LogUtil;
 import org.slf4j.Logger;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Map;
@@ -17,9 +18,11 @@ public class AuthController {
 
     private static final Logger log = LogUtil.getLogger(AuthController.class);
     private final UserService userService;
+    private final PasswordEncoder passwordEncoder;
 
-    public AuthController(UserService userService) {
+    public AuthController(UserService userService, PasswordEncoder passwordEncoder) {
         this.userService = userService;
+        this.passwordEncoder = passwordEncoder;
     }
 
     // POST /api/auth/register → register a new user
@@ -64,10 +67,20 @@ public class AuthController {
 
             User user = userService.findByEmail(email);
 
+            // 1. Check if user is active
             if (!user.getIsActive()) {
                 return ResponseEntity.status(HttpStatus.FORBIDDEN)
                         .body(Map.of("error", "Account is deactivated. Contact admin."));
             }
+
+            // 2. Verify password
+            if (!passwordEncoder.matches(password, user.getPasswordHash())) {
+                log.warn("Login attempt failed for user: {}", email);
+                return ResponseEntity.status(HttpStatus.UNAUTHORIZED)
+                        .body(Map.of("error", "Invalid email or password."));
+            }
+
+            log.info("User logged in successfully: email={}, role={}", user.getEmail(), user.getRole());
 
             // For now, return user info (JWT integration comes later)
             return ResponseEntity.ok(Map.of(

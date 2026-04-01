@@ -34,3 +34,8 @@ This monorepo structure allows for clear separation of concerns. The backend man
 
 - **Username**: Tanya@gmail.com
 - **Password**: Tanya123
+
+### How to run the project:
+
+- **Frontend**: npm install, npm run dev
+- **Backend**: mvn spring-boot:run
