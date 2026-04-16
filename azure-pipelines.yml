@@ -1,0 +1,113 @@
+# --- 1. THE TRIGGER ---
+# We use 'include' to watch the main project folders
+# and 'exclude' to ignore documentation files that don't need a build.
+trigger:
+  branches:
+    include:
+    - main
+  paths:
+    include:
+    - backend/*
+    - frontend/*
+    exclude:
+    - README.md
+    - Documentation.md
+    - .gitignore
+
+# --- 2. THE POOL ---
+# This specifies the machine (Agent) that will run the build.
+# 'ubuntu-latest' is the enterprise standard for Linux/Docker builds.
+pool:
+  vmImage: ubuntu-latest
+
+# --- 3. VARIABLES ---
+# Reusable values. Instead of typing your registry name 10 times, 
+# we define it once here.
+variables:
+  # The 'Service Connection' is a secure link you create in Azure DevOps UI
+  dockerRegistryServiceConnection: 'acr-connection' 
+  containerRegistry: 'tanyabansal.azurecr.io'
+  
+  # Image names for our two services
+  imageRepositoryBackend: 'job-portal-backend'
+  imageRepositoryFrontend: 'job-portal-frontend'
+  
+  # The version tag (uses the unique ID of each build)
+  tag: '$(Build.BuildId)'
+
+# --- 4. STAGES ---
+# We divide the work into logical phases called Stages.
+stages:
+- stage: Build_and_Test
+  displayName: 'Stage 1: Build and Test'
+  # If any job in this stage fails, the whole stage fails.
+  jobs:
+  - job: Maven_Build_Backend
+    displayName: 'Backend: Compile and Unit Test'
+    steps:
+    - task: Maven@4
+      displayName: 'Maven: Clean, Compile, and Package'
+      inputs:
+        mavenPomFile: 'backend/pom.xml'
+        goals: 'clean package'
+        publishJUnitResults: true
+        testResultsFiles: '**/surefire-reports/TEST-*.xml'
+        javaHomeOption: 'JDKVersion'
+        jdkVersionOption: '1.17'
+        mavenVersionOption: 'Default'
+        mavenAuthenticateFeed: false
+        effectivePomSkip: false
+        sonarQubeRunAnalysis: false
+  
+  - job: NPM_Build_Frontend
+    displayName: 'Frontend: Install and Build'
+    steps:
+    - task: NodeTool@0
+      displayName: 'Step A: Install Node.js 20.x'
+      inputs:
+        versionSpec: '20.x'
+
+    - script: |
+        cd frontend
+        npm install
+      displayName: 'Step B: Download Frontend Libraries'
+
+    - script: |
+        cd frontend
+        npm run lint
+      displayName: 'Step C: Quality Check (Linting)'
+
+    - script: |
+        cd frontend
+        npm run build
+      displayName: 'Step D: Generate Final Website Files'
+
+- stage: Docker_Push
+  displayName: 'Stage 2: Docker Build and Push'
+  dependsOn: Build_and_Test
+  condition: succeeded()
+  jobs:
+  - job: Push_Images_to_ACR
+    displayName: 'Package and Upload to Azure Registry'
+    steps:
+    - task: Docker@2
+      displayName: 'Step A: Build and Push Backend'
+      inputs:
+        command: buildAndPush
+        repository: $(imageRepositoryBackend)
+        dockerfile: $(dockerfilePathBackend)
+        containerRegistry: $(dockerRegistryServiceConnection)
+        tags: |
+          $(tag)
+          latest
+
+    - task: Docker@2
+      displayName: 'Step B: Build and Push Frontend'
+      inputs:
+        command: buildAndPush
+        repository: $(imageRepositoryFrontend)
+        dockerfile: $(dockerfilePathFrontend)
+        containerRegistry: $(dockerRegistryServiceConnection)
+        tags: |
+          $(tag)
+          latest

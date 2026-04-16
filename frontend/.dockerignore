@@ -1,0 +1,26 @@
+# Ignore the giant node_modules folder
+node_modules/
+
+# Ignore local build output
+dist/
+build/
+
+# Ignore IDE settings
+.idea/
+.vscode/
+
+# Ignore Git files
+.git/
+.gitignore
+
+# Ignore logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ignore miscellaneous
+README.md
+Dockerfile
+.dockerignore
+package-lock.json
