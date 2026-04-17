@@ -38,9 +38,6 @@ variables:
   
   # The version tag (uses the unique ID of each build)
   tag: '$(Build.BuildId)'
-  
-  # Enable modern BuildKit for cross-platform support
-  DOCKER_BUILDKIT: 1
 
 # --- 4. STAGES ---
 # We divide the work into logical phases called Stages.
@@ -95,17 +92,13 @@ stages:
         fi
       displayName: '🔍 Infrastructure Health Check (Docker)'
 
-    - task: Docker@2
-      displayName: 'Step A1: Build Backend (AMD64)'
-      inputs:
-        command: build
-        repository: $(imageRepositoryBackend)
-        dockerfile: $(dockerfilePathBackend)
-        containerRegistry: $(dockerRegistryServiceConnection)
-        arguments: '--platform linux/amd64'
-        tags: |
-          $(tag)
-          latest
+    - script: |
+        # Professional AMD64 Build (Direct Script)
+        cd backend
+        docker build --platform linux/amd64 \
+          -t $(containerRegistry)/$(imageRepositoryBackend):$(tag) \
+          -t $(containerRegistry)/$(imageRepositoryBackend):latest .
+      displayName: 'Step A1: Build Backend (AMD64 - Script)'
 
     - task: Docker@2
       displayName: 'Step A2: Push Backend to ACR'
@@ -117,17 +110,13 @@ stages:
           $(tag)
           latest
 
-    - task: Docker@2
-      displayName: 'Step B1: Build Frontend (AMD64)'
-      inputs:
-        command: build
-        repository: $(imageRepositoryFrontend)
-        dockerfile: $(dockerfilePathFrontend)
-        containerRegistry: $(dockerRegistryServiceConnection)
-        arguments: '--platform linux/amd64'
-        tags: |
-          $(tag)
-          latest
+    - script: |
+        # Professional AMD64 Build (Direct Script)
+        cd frontend
+        docker build --platform linux/amd64 \
+          -t $(containerRegistry)/$(imageRepositoryFrontend):$(tag) \
+          -t $(containerRegistry)/$(imageRepositoryFrontend):latest .
+      displayName: 'Step B1: Build Frontend (AMD64 - Script)'
 
     - task: Docker@2
       displayName: 'Step B2: Push Frontend to ACR'
