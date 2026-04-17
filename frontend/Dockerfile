@@ -1,6 +1,6 @@
 # --- Stage 1: Build ---
 # We use Node 20 to build the static assets.
-FROM node:20-alpine AS build
+FROM --platform=linux/amd64 node:20-alpine AS build
 
 WORKDIR /app
 
@@ -16,7 +16,7 @@ RUN npm run build
 
 # --- Stage 2: Serve ---
 # We switch to the Nginx Alpine image, which is extremely lightweight (~5MB).
-FROM nginx:stable-alpine
+FROM --platform=linux/amd64 nginx:stable-alpine
 
 # STEP C: Deploy to Nginx
 # We copy the result of Stage 1 (the 'dist' folder) into Nginx's HTML folder.

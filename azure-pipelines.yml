@@ -38,6 +38,9 @@ variables:
   
   # The version tag (uses the unique ID of each build)
   tag: '$(Build.BuildId)'
+  
+  # Enable modern BuildKit for cross-platform support
+  DOCKER_BUILDKIT: 1
 
 # --- 4. STAGES ---
 # We divide the work into logical phases called Stages.

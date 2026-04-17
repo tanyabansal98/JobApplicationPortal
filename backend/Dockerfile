@@ -1,7 +1,7 @@
 # --- Stage 1: The "Builder" Stage ---
 # We use the full Maven image because it has the 'mvn' command and a full JDK.
 # We name this stage 'build' so we can refer to it in the next stage.
-FROM maven:3.9.6-eclipse-temurin-17 AS build
+FROM --platform=linux/amd64 maven:3.9.6-eclipse-temurin-17 AS build
 
 # WORKDIR creates a folder inside the container where our commands will run.
 WORKDIR /app
@@ -26,7 +26,7 @@ RUN mvn clean package -DskipTests
 # --- Stage 2: The "Runtime" Stage ---
 # We switch to a JRE (Java Runtime Environment) image. 
 # It is much smaller because it doesn't have compiler tools (which we don't need anymore).
-FROM eclipse-temurin:17-jre-jammy
+FROM --platform=linux/amd64 eclipse-temurin:17-jre-jammy
 
 # Setting the working directory for the final app
 WORKDIR /app
