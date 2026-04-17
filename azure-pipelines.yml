@@ -32,6 +32,10 @@ variables:
   imageRepositoryBackend: 'job-portal-backend'
   imageRepositoryFrontend: 'job-portal-frontend'
   
+  # Paths to the Dockerfiles
+  dockerfilePathBackend: 'backend/Dockerfile'
+  dockerfilePathFrontend: 'frontend/Dockerfile'
+  
   # The version tag (uses the unique ID of each build)
   tag: '$(Build.BuildId)'
 
