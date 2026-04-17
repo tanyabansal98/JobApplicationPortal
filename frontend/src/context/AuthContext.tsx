@@ -19,19 +19,21 @@ interface AuthContextType {
 const AuthContext = createContext<AuthContextType | undefined>(undefined);
 
 export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-    const [user, setUser] = useState<User | null>(null);
-    const [isLoading, setIsLoading] = useState(true);
-
-    useEffect(() => {
+    const [user, setUser] = useState<User | null>(() => {
         const savedUser = localStorage.getItem('user');
         if (savedUser) {
             try {
-                setUser(JSON.parse(savedUser));
+                return JSON.parse(savedUser);
             } catch (e) {
                 console.error('Failed to parse user from localStorage', e);
                 localStorage.removeItem('user');
             }
         }
+        return null;
+    });
+    const [isLoading, setIsLoading] = useState(true);
+
+    useEffect(() => {
         setIsLoading(false);
     }, []);
 
