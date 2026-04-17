@@ -95,7 +95,7 @@ stages:
     - script: |
         # Professional AMD64 Build (Direct Script)
         cd backend
-        docker build --platform linux/amd64 \
+        docker build --platform linux/amd64 --provenance=false \
           -t $(containerRegistry)/$(imageRepositoryBackend):$(tag) \
           -t $(containerRegistry)/$(imageRepositoryBackend):latest .
       displayName: 'Step A1: Build Backend (AMD64 - Script)'
@@ -113,7 +113,7 @@ stages:
     - script: |
         # Professional AMD64 Build (Direct Script)
         cd frontend
-        docker build --platform linux/amd64 \
+        docker build --platform linux/amd64 --provenance=false \
           -t $(containerRegistry)/$(imageRepositoryFrontend):$(tag) \
           -t $(containerRegistry)/$(imageRepositoryFrontend):latest .
       displayName: 'Step B1: Build Frontend (AMD64 - Script)'
@@ -127,3 +127,43 @@ stages:
         tags: |
           $(tag)
           latest
+
+- stage: Continuous_Deployment
+  displayName: 'Stage 3: Cloud Deployment'
+  dependsOn: Docker_Push
+  condition: succeeded()
+  jobs:
+  - deployment: Deploy_to_Azure
+    displayName: 'Automated Launch'
+    environment: 'production'
+    strategy:
+      runOnce:
+        deploy:
+          steps:
+          # A: Deploy the Backend (Automatic Creation)
+          - task: AzureContainerApps@1
+            displayName: 'Launch Backend'
+            inputs:
+              azureSubscription: $(dockerRegistryServiceConnection)
+              acrName: 'tanyabansal'
+              imageToDeploy: '$(containerRegistry)/$(imageRepositoryBackend):$(tag)'
+              containerAppName: 'job-portal-backend'
+              resourceGroup: 'JobPortalGroup'
+              containerAppEnvironment: 'job-portal-env'
+              targetPort: 8080
+              envVars: |
+                DB_URL=$(DB_URL)
+                DB_USERNAME=$(DB_USERNAME)
+                DB_PASSWORD=$(DB_PASSWORD)
+
+          # B: Deploy the Frontend (Automatic Creation)
+          - task: AzureContainerApps@1
+            displayName: 'Launch Frontend'
+            inputs:
+              azureSubscription: $(dockerRegistryServiceConnection)
+              acrName: 'tanyabansal'
+              imageToDeploy: '$(containerRegistry)/$(imageRepositoryFrontend):$(tag)'
+              containerAppName: 'job-portal-frontend'
+              resourceGroup: 'JobPortalGroup'
+              containerAppEnvironment: 'job-portal-env'
+              targetPort: 80
