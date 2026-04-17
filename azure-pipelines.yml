@@ -15,10 +15,10 @@ trigger:
     - .gitignore
 
 # --- 2. THE POOL ---
-# This specifies the machine (Agent) that will run the build.
-# 'ubuntu-latest' is the enterprise standard for Linux/Docker builds.
+# We are switching from 'ubuntu-latest' to 'Default' 
+# to use your local Mac as the build engine.
 pool:
-  vmImage: ubuntu-latest
+  name: Default
 
 # --- 3. VARIABLES ---
 # Reusable values. Instead of typing your registry name 10 times, 
