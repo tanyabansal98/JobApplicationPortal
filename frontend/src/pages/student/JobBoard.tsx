@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import api from '../../services/api';
-import { Card } from '../../components/ui/Card';
 import { Button } from '../../components/ui/Button';
 import { Briefcase, MapPin, DollarSign, Search, CheckCircle, Loader2, ArrowRight } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';

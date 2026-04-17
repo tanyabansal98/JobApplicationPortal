@@ -62,7 +62,7 @@ stages:
   - job: NPM_Build_Frontend
     displayName: 'Frontend: Install and Build'
     steps:
-    - task: NodeTool@0
+    - task: NodeTool@1
       displayName: 'Step A: Install Node.js 20.x'
       inputs:
         versionSpec: '20.x'
