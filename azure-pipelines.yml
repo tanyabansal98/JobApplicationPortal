@@ -93,9 +93,9 @@ stages:
       displayName: '🔍 Infrastructure Health Check (Docker)'
 
     - task: Docker@2
-      displayName: 'Step A: Build and Push Backend'
+      displayName: 'Step A1: Build Backend (AMD64)'
       inputs:
-        command: buildAndPush
+        command: build
         repository: $(imageRepositoryBackend)
         dockerfile: $(dockerfilePathBackend)
         containerRegistry: $(dockerRegistryServiceConnection)
@@ -105,14 +105,33 @@ stages:
           latest
 
     - task: Docker@2
-      displayName: 'Step B: Build and Push Frontend'
+      displayName: 'Step A2: Push Backend to ACR'
       inputs:
-        command: buildAndPush
+        command: push
+        repository: $(imageRepositoryBackend)
+        containerRegistry: $(dockerRegistryServiceConnection)
+        tags: |
+          $(tag)
+          latest
+
+    - task: Docker@2
+      displayName: 'Step B1: Build Frontend (AMD64)'
+      inputs:
+        command: build
         repository: $(imageRepositoryFrontend)
         dockerfile: $(dockerfilePathFrontend)
         containerRegistry: $(dockerRegistryServiceConnection)
         arguments: '--platform linux/amd64'
         tags: |
           $(tag)
+          latest
+
+    - task: Docker@2
+      displayName: 'Step B2: Push Frontend to ACR'
+      inputs:
+        command: push
+        repository: $(imageRepositoryFrontend)
+        containerRegistry: $(dockerRegistryServiceConnection)
+        tags: |
           $(tag)
           latest
