@@ -7,8 +7,10 @@ trigger:
     - main
   paths:
     include:
+    - '*'
     - backend/*
     - frontend/*
+    - azure-pipelines.yml
     exclude:
     - README.md
     - Documentation.md
