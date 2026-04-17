@@ -143,6 +143,8 @@ stages:
       inputs:
         azureSubscription: $(azureServiceConnection)
         acrName: 'tanyabansal'
+        acrUsername: $(acrUsername)
+        acrPassword: $(acrPassword)
         imageToDeploy: '$(containerRegistry)/$(imageRepositoryBackend):$(tag)'
         containerAppName: 'job-portal-backend'
         resourceGroup: 'JobPortalGroup'
@@ -159,6 +161,8 @@ stages:
       inputs:
         azureSubscription: $(azureServiceConnection)
         acrName: 'tanyabansal'
+        acrUsername: $(acrUsername)
+        acrPassword: $(acrPassword)
         imageToDeploy: '$(containerRegistry)/$(imageRepositoryFrontend):$(tag)'
         containerAppName: 'job-portal-frontend'
         resourceGroup: 'JobPortalGroup'
