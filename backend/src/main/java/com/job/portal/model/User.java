@@ -14,6 +14,9 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @Builder
 public class User {
+    
+    @OneToOne(mappedBy = "user", cascade = CascadeType.ALL)
+    private EmployerProfile employerProfile;
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "users_seq_gen")

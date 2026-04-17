@@ -133,8 +133,6 @@ stages:
   displayName: 'Stage 3: Cloud Deployment'
   dependsOn: Docker_Push
   condition: succeeded()
-  pool:
-    vmImage: 'ubuntu-latest'
   jobs:
   - job: Deploy_to_Azure
     displayName: 'Automated Launch'

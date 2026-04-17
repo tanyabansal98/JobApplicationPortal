@@ -12,6 +12,7 @@ interface Job {
     location: string;
     salary: number;
     employerId: number;
+    displayCompanyName: string;
 }
 
 const JobBoard: React.FC = () => {
@@ -135,9 +136,14 @@ const JobBoard: React.FC = () => {
                                                 )}
                                             </div>
 
-                                            <h3 className={`text-xl font-bold mb-2 ${hasApplied ? 'text-gray-700' : 'text-gray-900'}`}>
+                                            <h3 className={`text-xl font-bold mb-1 ${hasApplied ? 'text-gray-700' : 'text-gray-900'}`}>
                                                 {job.title}
                                             </h3>
+                                            <div className="mb-3">
+                                                <span className="text-sm font-semibold text-primary/80 uppercase tracking-wider">
+                                                    {job.displayCompanyName}
+                                                </span>
+                                            </div>
                                             <p className="text-gray-600 text-sm line-clamp-3 mb-6 flex-grow leading-relaxed">
                                                 {job.description}
                                             </p>

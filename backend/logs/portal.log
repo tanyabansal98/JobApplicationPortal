@@ -1,35 +1,190 @@
-2026-04-04T00:11:25.328-04:00  WARN 34527 --- [job-application-portal] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h11s719ms).
-2026-04-04T00:44:52.800-04:00  WARN 34527 --- [job-application-portal] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=33m27s472ms).
-2026-04-04T01:09:49.515-04:00  WARN 34527 --- [job-application-portal] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=24m56s714ms).
-2026-04-04T05:02:33.095-04:00  WARN 34527 --- [job-application-portal] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h1m12s713ms).
-2026-04-04T08:05:23.983-04:00  WARN 34527 --- [job-application-portal] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3h2m50s889ms).
-2026-04-04T08:40:15.466-04:00  WARN 34527 --- [job-application-portal] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=34m51s482ms).
-2026-04-04T09:32:31.098-04:00  WARN 34527 --- [job-application-portal] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=52m15s633ms).
-2026-04-04T10:02:55.401-04:00  WARN 34527 --- [job-application-portal] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=30m24s303ms).
-2026-04-04T10:13:46.677-04:00  WARN 34527 --- [job-application-portal] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=10m51s276ms).
-2026-04-04T12:42:47.533-04:00  WARN 34527 --- [job-application-portal] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=18m29s681ms).
-2026-04-04T12:46:34.710-04:00  WARN 34527 --- [job-application-portal] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m14s552ms).
-2026-04-04T12:49:35.482-04:00  WARN 34527 --- [job-application-portal] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m775ms).
-2026-04-04T12:52:42.575-04:00  WARN 34527 --- [job-application-portal] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m7s93ms).
-2026-04-04T12:56:20.033-04:00  WARN 34527 --- [job-application-portal] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m37s457ms).
-2026-04-04T12:58:41.256-04:00  WARN 34527 --- [job-application-portal] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m21s223ms).
-2026-04-04T13:02:26.433-04:00  WARN 34527 --- [job-application-portal] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m45s176ms).
-2026-04-04T13:06:40.884-04:00  WARN 34527 --- [job-application-portal] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m14s452ms).
-2026-04-04T13:39:32.678-04:00  WARN 34527 --- [job-application-portal] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=8m21s629ms).
-2026-04-04T13:59:41.285-04:00  WARN 34527 --- [job-application-portal] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m8s433ms).
-2026-04-04T14:28:11.545-04:00  WARN 34527 --- [job-application-portal] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7m88ms).
-2026-04-04T17:13:04.869-04:00  WARN 34527 --- [job-application-portal] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=13m52s94ms).
-2026-04-04T17:17:00.444-04:00  WARN 34527 --- [job-application-portal] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m55s576ms).
-2026-04-04T17:18:19.187-04:00  WARN 34527 --- [job-application-portal] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m18s743ms).
-2026-04-04T17:25:50.391-04:00  WARN 34527 --- [job-application-portal] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7m31s203ms).
-2026-04-04T18:27:12.937-04:00  WARN 34527 --- [job-application-portal] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m52s91ms).
-2026-04-04T18:30:05.709-04:00  WARN 34527 --- [job-application-portal] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m52s772ms).
-2026-04-04T18:31:02.883-04:00  WARN 34527 --- [job-application-portal] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=57s174ms).
-2026-04-04T19:27:15.492-04:00  WARN 34527 --- [job-application-portal] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=56m12s609ms).
-2026-04-04T19:36:33.154-04:00  WARN 34527 --- [job-application-portal] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9m17s661ms).
-2026-04-04T21:07:28.540-04:00  INFO 34527 --- [job-application-portal] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
-2026-04-04T21:07:28.572-04:00  INFO 34527 --- [job-application-portal] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
-2026-04-04T21:07:28.587-04:00  INFO 34527 --- [job-application-portal] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2026-04-04T21:07:28.611-04:00  INFO 34527 --- [job-application-portal] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2026-04-04T21:07:58.617-04:00  WARN 34527 --- [job-application-portal] [SpringApplicationShutdownHook] com.zaxxer.hikari.pool.HikariPool        : Timed-out waiting for add connection executor to shutdown
-2026-04-04T21:07:58.622-04:00  INFO 34527 --- [job-application-portal] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-04-17T11:34:11.327-04:00  INFO 82171 --- [job-application-portal] [restartedMain] c.j.p.JobApplicationPortalApplication    : Starting JobApplicationPortalApplication using Java 25.0.2 with PID 82171 (/Users/tanyabansal/Desktop/JobApplicationPortal/backend/target/classes started by tanyabansal in /Users/tanyabansal/Desktop/JobApplicationPortal/backend)
+2026-04-17T11:34:11.330-04:00 DEBUG 82171 --- [job-application-portal] [restartedMain] c.j.p.JobApplicationPortalApplication    : Running with Spring Boot v4.0.1, Spring v7.0.2
+2026-04-17T11:34:11.331-04:00  INFO 82171 --- [job-application-portal] [restartedMain] c.j.p.JobApplicationPortalApplication    : No active profile set, falling back to 1 default profile: "default"
+2026-04-17T11:34:11.363-04:00  INFO 82171 --- [job-application-portal] [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in /Users/tanyabansal/.m2/repository/com/oracle/database/jdbc/ojdbc11/23.9.0.25.07/ojdbc11-23.9.0.25.07.jar referenced one or more files that do not exist: file:/Users/tanyabansal/.m2/repository/com/oracle/database/jdbc/ojdbc11/23.9.0.25.07/oraclepki.jar
+2026-04-17T11:34:11.363-04:00  INFO 82171 --- [job-application-portal] [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in /Users/tanyabansal/.m2/repository/com/oracle/database/security/oraclepki/21.9.0.0/oraclepki-21.9.0.0.jar referenced one or more files that do not exist: file:/Users/tanyabansal/.m2/repository/com/oracle/database/security/oraclepki/21.9.0.0/osdt_core.jar,file:/Users/tanyabansal/.m2/repository/com/oracle/database/security/oraclepki/21.9.0.0/osdt_cert.jar,file:/Users/tanyabansal/.m2/repository/com/oracle/database/security/oraclepki/oracle.osdt/osdt_core.jar,file:/Users/tanyabansal/.m2/repository/com/oracle/database/security/oraclepki/oracle.osdt/osdt_cert.jar
+2026-04-17T11:34:11.363-04:00  INFO 82171 --- [job-application-portal] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-04-17T11:34:11.363-04:00  INFO 82171 --- [job-application-portal] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-04-17T11:34:11.732-04:00  INFO 82171 --- [job-application-portal] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-17T11:34:11.776-04:00  INFO 82171 --- [job-application-portal] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 39 ms. Found 5 JPA repository interfaces.
+2026-04-17T11:34:12.091-04:00  INFO 82171 --- [job-application-portal] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-04-17T11:34:12.101-04:00  INFO 82171 --- [job-application-portal] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-17T11:34:12.102-04:00  INFO 82171 --- [job-application-portal] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-04-17T11:34:12.124-04:00  INFO 82171 --- [job-application-portal] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 761 ms
+2026-04-17T11:34:12.267-04:00  INFO 82171 --- [job-application-portal] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-17T11:34:13.607-04:00  INFO 82171 --- [job-application-portal] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@72aea6b
+2026-04-17T11:34:13.609-04:00  INFO 82171 --- [job-application-portal] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-17T11:34:13.658-04:00  INFO 82171 --- [job-application-portal] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-04-17T11:34:13.695-04:00  INFO 82171 --- [job-application-portal] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.0.Final
+2026-04-17T11:34:13.946-04:00  INFO 82171 --- [job-application-portal] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-17T11:34:14.213-04:00  WARN 82171 --- [job-application-portal] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: OracleDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-17T11:34:14.350-04:00  INFO 82171 --- [job-application-portal] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:oracle:thin:@damg6210db_high]
+	Database driver: Oracle JDBC driver
+	Database dialect: OracleDialect
+	Database version: 19.31
+	Default catalog/schema: undefined/MVC_APP
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-17T11:34:14.910-04:00  INFO 82171 --- [job-application-portal] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-17T11:34:18.224-04:00  INFO 82171 --- [job-application-portal] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-17T11:34:18.301-04:00  INFO 82171 --- [job-application-portal] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-04-17T11:34:18.399-04:00  WARN 82171 --- [job-application-portal] [restartedMain] o.s.aop.framework.CglibAopProxy          : Public final method [public final java.lang.String com.job.portal.service.BaseService.describe()] cannot get proxied via CGLIB, consider removing the final marker or using interface-based JDK proxies.
+2026-04-17T11:34:18.432-04:00  WARN 82171 --- [job-application-portal] [restartedMain] o.s.aop.framework.CglibAopProxy          : Public final method [public final java.lang.String com.job.portal.service.BaseService.describe()] cannot get proxied via CGLIB, consider removing the final marker or using interface-based JDK proxies.
+2026-04-17T11:34:18.449-04:00  WARN 82171 --- [job-application-portal] [restartedMain] o.s.aop.framework.CglibAopProxy          : Public final method [public final java.lang.String com.job.portal.service.BaseService.describe()] cannot get proxied via CGLIB, consider removing the final marker or using interface-based JDK proxies.
+2026-04-17T11:34:18.452-04:00  WARN 82171 --- [job-application-portal] [restartedMain] o.s.aop.framework.CglibAopProxy          : Public final method [public final java.lang.String com.job.portal.service.BaseService.describe()] cannot get proxied via CGLIB, consider removing the final marker or using interface-based JDK proxies.
+2026-04-17T11:34:18.469-04:00  WARN 82171 --- [job-application-portal] [restartedMain] o.s.aop.framework.CglibAopProxy          : Public final method [public final java.lang.String com.job.portal.service.BaseService.describe()] cannot get proxied via CGLIB, consider removing the final marker or using interface-based JDK proxies.
+2026-04-17T11:34:18.504-04:00  WARN 82171 --- [job-application-portal] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-17T11:34:18.546-04:00  WARN 82171 --- [job-application-portal] [restartedMain] .s.a.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 4d8266dd-8d09-437a-a155-a38abbda8197
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-04-17T11:34:18.550-04:00  INFO 82171 --- [job-application-portal] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-04-17T11:34:18.805-04:00  INFO 82171 --- [job-application-portal] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-04-17T11:34:18.809-04:00  INFO 82171 --- [job-application-portal] [restartedMain] c.j.p.JobApplicationPortalApplication    : Started JobApplicationPortalApplication in 7.716 seconds (process running for 7.997)
+2026-04-17T11:34:59.232-04:00  INFO 82171 --- [job-application-portal] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-17T11:34:59.233-04:00  INFO 82171 --- [job-application-portal] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-04-17T11:34:59.234-04:00  INFO 82171 --- [job-application-portal] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-04-17T11:34:59.945-04:00 ERROR 82171 --- [job-application-portal] [http-nio-8080-exec-2] c.j.p.exception.GlobalExceptionHandler   : Unhandled exception
+
+org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico for request '/favicon.ico'.
+	at org.springframework.web.servlet.resource.ResourceHttpRequestHandler.handleRequest(ResourceHttpRequestHandler.java:527) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:50) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:866) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1003) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:892) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:622) ~[tomcat-embed-core-11.0.15.jar:6.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:874) ~[spring-webmvc-7.0.2.jar:7.0.2]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:710) ~[tomcat-embed-core-11.0.15.jar:6.1]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:128) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:235) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:371) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:181) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:110) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:96) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:380) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:237) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:195) ~[spring-security-web-7.0.2.jar:7.0.2]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:317) ~[spring-security-config-7.0.2.jar:7.0.2]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:355) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:272) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:199) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-7.0.2.jar:7.0.2]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:107) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:77) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:397) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1778) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:946) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:480) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:57) ~[tomcat-embed-core-11.0.15.jar:11.0.15]
+	at java.base/java.lang.Thread.run(Thread.java:1474) ~[na:na]
+
+2026-04-17T11:34:59.966-04:00  WARN 82171 --- [job-application-portal] [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.servlet.resource.NoResourceFoundException: No static resource favicon.ico for request '/favicon.ico'.]
+2026-04-17T11:49:34.342-04:00  INFO 82171 --- [job-application-portal] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-04-17T11:49:34.357-04:00  INFO 82171 --- [job-application-portal] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-04-17T11:49:34.361-04:00  INFO 82171 --- [job-application-portal] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-17T11:49:34.364-04:00  INFO 82171 --- [job-application-portal] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-04-17T11:49:34.847-04:00  INFO 82171 --- [job-application-portal] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-04-17T11:49:56.710-04:00  INFO 90222 --- [job-application-portal] [restartedMain] c.j.p.JobApplicationPortalApplication    : Starting JobApplicationPortalApplication using Java 25.0.2 with PID 90222 (/Users/tanyabansal/Desktop/JobApplicationPortal/backend/target/classes started by tanyabansal in /Users/tanyabansal/Desktop/JobApplicationPortal/backend)
+2026-04-17T11:49:56.711-04:00 DEBUG 90222 --- [job-application-portal] [restartedMain] c.j.p.JobApplicationPortalApplication    : Running with Spring Boot v4.0.1, Spring v7.0.2
+2026-04-17T11:49:56.712-04:00  INFO 90222 --- [job-application-portal] [restartedMain] c.j.p.JobApplicationPortalApplication    : No active profile set, falling back to 1 default profile: "default"
+2026-04-17T11:49:56.741-04:00  INFO 90222 --- [job-application-portal] [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in /Users/tanyabansal/.m2/repository/com/oracle/database/jdbc/ojdbc11/23.9.0.25.07/ojdbc11-23.9.0.25.07.jar referenced one or more files that do not exist: file:/Users/tanyabansal/.m2/repository/com/oracle/database/jdbc/ojdbc11/23.9.0.25.07/oraclepki.jar
+2026-04-17T11:49:56.741-04:00  INFO 90222 --- [job-application-portal] [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in /Users/tanyabansal/.m2/repository/com/oracle/database/security/oraclepki/21.9.0.0/oraclepki-21.9.0.0.jar referenced one or more files that do not exist: file:/Users/tanyabansal/.m2/repository/com/oracle/database/security/oraclepki/21.9.0.0/osdt_core.jar,file:/Users/tanyabansal/.m2/repository/com/oracle/database/security/oraclepki/21.9.0.0/osdt_cert.jar,file:/Users/tanyabansal/.m2/repository/com/oracle/database/security/oraclepki/oracle.osdt/osdt_core.jar,file:/Users/tanyabansal/.m2/repository/com/oracle/database/security/oraclepki/oracle.osdt/osdt_cert.jar
+2026-04-17T11:49:56.742-04:00  INFO 90222 --- [job-application-portal] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-04-17T11:49:56.742-04:00  INFO 90222 --- [job-application-portal] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-04-17T11:49:57.090-04:00  INFO 90222 --- [job-application-portal] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-17T11:49:57.131-04:00  INFO 90222 --- [job-application-portal] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 36 ms. Found 5 JPA repository interfaces.
+2026-04-17T11:49:57.417-04:00  INFO 90222 --- [job-application-portal] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-04-17T11:49:57.425-04:00  INFO 90222 --- [job-application-portal] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-04-17T11:49:57.426-04:00  INFO 90222 --- [job-application-portal] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.15]
+2026-04-17T11:49:57.445-04:00  INFO 90222 --- [job-application-portal] [restartedMain] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 703 ms
+2026-04-17T11:49:57.576-04:00  INFO 90222 --- [job-application-portal] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-04-17T11:49:58.803-04:00  INFO 90222 --- [job-application-portal] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection oracle.jdbc.driver.T4CConnection@7250630c
+2026-04-17T11:49:58.805-04:00  INFO 90222 --- [job-application-portal] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-04-17T11:49:58.860-04:00  INFO 90222 --- [job-application-portal] [restartedMain] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-04-17T11:49:58.890-04:00  INFO 90222 --- [job-application-portal] [restartedMain] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.2.0.Final
+2026-04-17T11:49:59.127-04:00  INFO 90222 --- [job-application-portal] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-17T11:49:59.431-04:00  WARN 90222 --- [job-application-portal] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: OracleDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-04-17T11:49:59.542-04:00  INFO 90222 --- [job-application-portal] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:oracle:thin:@damg6210db_high]
+	Database driver: Oracle JDBC driver
+	Database dialect: OracleDialect
+	Database version: 19.31
+	Default catalog/schema: undefined/MVC_APP
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-17T11:50:00.090-04:00  INFO 90222 --- [job-application-portal] [restartedMain] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-17T11:50:02.147-04:00  INFO 90222 --- [job-application-portal] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-17T11:50:02.212-04:00  INFO 90222 --- [job-application-portal] [restartedMain] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-04-17T11:50:02.302-04:00  WARN 90222 --- [job-application-portal] [restartedMain] o.s.aop.framework.CglibAopProxy          : Public final method [public final java.lang.String com.job.portal.service.BaseService.describe()] cannot get proxied via CGLIB, consider removing the final marker or using interface-based JDK proxies.
+2026-04-17T11:50:02.335-04:00  WARN 90222 --- [job-application-portal] [restartedMain] o.s.aop.framework.CglibAopProxy          : Public final method [public final java.lang.String com.job.portal.service.BaseService.describe()] cannot get proxied via CGLIB, consider removing the final marker or using interface-based JDK proxies.
+2026-04-17T11:50:02.349-04:00  WARN 90222 --- [job-application-portal] [restartedMain] o.s.aop.framework.CglibAopProxy          : Public final method [public final java.lang.String com.job.portal.service.BaseService.describe()] cannot get proxied via CGLIB, consider removing the final marker or using interface-based JDK proxies.
+2026-04-17T11:50:02.353-04:00  WARN 90222 --- [job-application-portal] [restartedMain] o.s.aop.framework.CglibAopProxy          : Public final method [public final java.lang.String com.job.portal.service.BaseService.describe()] cannot get proxied via CGLIB, consider removing the final marker or using interface-based JDK proxies.
+2026-04-17T11:50:02.366-04:00  WARN 90222 --- [job-application-portal] [restartedMain] o.s.aop.framework.CglibAopProxy          : Public final method [public final java.lang.String com.job.portal.service.BaseService.describe()] cannot get proxied via CGLIB, consider removing the final marker or using interface-based JDK proxies.
+2026-04-17T11:50:02.406-04:00  WARN 90222 --- [job-application-portal] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-17T11:50:02.447-04:00  WARN 90222 --- [job-application-portal] [restartedMain] .s.a.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: cf2e519e-74bc-4226-ac37-0fbf08b5ea1a
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-04-17T11:50:02.452-04:00  INFO 90222 --- [job-application-portal] [restartedMain] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-04-17T11:50:02.690-04:00  INFO 90222 --- [job-application-portal] [restartedMain] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-04-17T11:50:02.694-04:00  INFO 90222 --- [job-application-portal] [restartedMain] c.j.p.JobApplicationPortalApplication    : Started JobApplicationPortalApplication in 6.213 seconds (process running for 6.455)

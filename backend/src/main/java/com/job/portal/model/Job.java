@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 import lombok.*;
 
 import java.time.LocalDateTime;
+import com.fasterxml.jackson.annotation.JsonProperty;
 
 @Entity
 @Table(name = "JOBS")
@@ -44,6 +45,14 @@ public class Job {
 
     @Column(name = "CREATED_AT", nullable = false)
     private LocalDateTime createdAt;
+
+    @JsonProperty("displayCompanyName")
+    public String getDisplayCompanyName() {
+        if (employer != null && employer.getEmployerProfile() != null) {
+            return "Boston - " + employer.getEmployerProfile().getCompanyName();
+        }
+        return "Boston - Unknown Company";
+    }
 
     @PrePersist
     protected void onCreate() {
