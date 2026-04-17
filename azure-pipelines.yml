@@ -52,8 +52,8 @@ stages:
         goals: 'clean package'
         publishJUnitResults: true
         testResultsFiles: '**/surefire-reports/TEST-*.xml'
-        javaHomeOption: 'JDKVersion'
-        jdkVersionOption: '1.17'
+        javaHomeOption: 'Path'
+        jdkDirectory: '/opt/homebrew/Cellar/openjdk@17/17.0.17/libexec/openjdk.jdk/Contents/Home'
         mavenVersionOption: 'Default'
         mavenAuthenticateFeed: false
         effectivePomSkip: false
@@ -69,18 +69,10 @@ stages:
 
     - script: |
         cd frontend
-        npm install
-      displayName: 'Step B: Download Frontend Libraries'
-
-    - script: |
-        cd frontend
-        npm run lint
-      displayName: 'Step C: Quality Check (Linting)'
-
-    - script: |
-        cd frontend
-        npm run build
-      displayName: 'Step D: Generate Final Website Files'
+        npm install || { echo 'npm install failed'; exit 1; }
+        npm run lint || { echo 'Linting failed'; exit 1; }
+        npm run build || { echo 'Build failed'; exit 1; }
+      displayName: 'Step B-D: Build Frontend (with error tracking)'
 
 - stage: Docker_Push
   displayName: 'Stage 2: Docker Build and Push'
