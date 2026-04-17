@@ -83,6 +83,15 @@ stages:
   - job: Push_Images_to_ACR
     displayName: 'Package and Upload to Azure Registry'
     steps:
+    - script: |
+        # Professional Safety Check
+        if ! /usr/local/bin/docker info > /dev/null 2>&1; then
+          echo "##[error] ERROR: Docker Desktop is not running on your Mac!"
+          echo "##[error] ACTION: Please open 'Docker Desktop' app on your Mac and wait for it to start, then rerun this pipeline."
+          exit 1
+        fi
+      displayName: '🔍 Infrastructure Health Check (Docker)'
+
     - task: Docker@2
       displayName: 'Step A: Build and Push Backend'
       inputs:
