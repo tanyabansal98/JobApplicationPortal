@@ -10,6 +10,10 @@ COPY package*.json ./
 RUN npm install
 
 # STEP B: Build the App
+# We define an ARG so the backend URL can be 'baked in' during the build.
+ARG VITE_API_BASE_URL
+ENV VITE_API_BASE_URL=$VITE_API_BASE_URL
+
 # Copy the rest of the source code and run the build script.
 COPY . .
 RUN npm run build

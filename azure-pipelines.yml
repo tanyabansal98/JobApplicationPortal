@@ -117,6 +117,7 @@ stages:
         # Professional AMD64 Build (Direct Script)
         cd frontend
         docker build --platform linux/amd64 --provenance=false \
+          --build-arg VITE_API_BASE_URL=https://job-portal-backend.wittywave-e7cfa4ce.eastus2.azurecontainerapps.io \
           -t $(containerRegistry)/$(imageRepositoryFrontend):$(tag) \
           -t $(containerRegistry)/$(imageRepositoryFrontend):latest .
       displayName: 'Step B1: Build Frontend (AMD64 - Script)'
