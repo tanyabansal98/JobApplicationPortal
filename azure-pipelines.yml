@@ -99,6 +99,7 @@ stages:
         repository: $(imageRepositoryBackend)
         dockerfile: $(dockerfilePathBackend)
         containerRegistry: $(dockerRegistryServiceConnection)
+        arguments: '--platform linux/amd64'
         tags: |
           $(tag)
           latest
@@ -110,6 +111,8 @@ stages:
         repository: $(imageRepositoryFrontend)
         dockerfile: $(dockerfilePathFrontend)
         containerRegistry: $(dockerRegistryServiceConnection)
+        arguments: '--platform linux/amd64'
         tags: |
+          $(tag)
           $(tag)
           latest
