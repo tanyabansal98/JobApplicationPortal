@@ -68,6 +68,8 @@ stages:
         versionSpec: '20.x'
 
     - script: |
+        node -v
+        which node
         cd frontend
         npm install || { echo 'npm install failed'; exit 1; }
         npm run lint || { echo 'Linting failed'; exit 1; }
