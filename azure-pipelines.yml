@@ -24,8 +24,9 @@ pool:
 # Reusable values. Instead of typing your registry name 10 times, 
 # we define it once here.
 variables:
-  # The 'Service Connection' is a secure link you create in Azure DevOps UI
+  # The 'Service Connections' in Azure DevOps
   dockerRegistryServiceConnection: 'acr-connection' 
+  azureServiceConnection: 'azure-resource-connection'
   containerRegistry: 'tanyabansal.azurecr.io'
   
   # Image names for our two services
@@ -135,7 +136,6 @@ stages:
   jobs:
   - deployment: Deploy_to_Azure
     displayName: 'Automated Launch'
-    environment: 'production'
     strategy:
       runOnce:
         deploy:
@@ -144,7 +144,7 @@ stages:
           - task: AzureContainerApps@1
             displayName: 'Launch Backend'
             inputs:
-              azureSubscription: $(dockerRegistryServiceConnection)
+              azureSubscription: $(azureServiceConnection)
               acrName: 'tanyabansal'
               imageToDeploy: '$(containerRegistry)/$(imageRepositoryBackend):$(tag)'
               containerAppName: 'job-portal-backend'
@@ -160,7 +160,7 @@ stages:
           - task: AzureContainerApps@1
             displayName: 'Launch Frontend'
             inputs:
-              azureSubscription: $(dockerRegistryServiceConnection)
+              azureSubscription: $(azureServiceConnection)
               acrName: 'tanyabansal'
               imageToDeploy: '$(containerRegistry)/$(imageRepositoryFrontend):$(tag)'
               containerAppName: 'job-portal-frontend'
