@@ -54,6 +54,7 @@ const LoginPage: React.FC = () => {
                         >
                             <LogIn size={32} />
                         </motion.div>
+                        <p className="text-sm font-medium text-primary mb-1 uppercase tracking-wider">Welcome to the Job Application Portal</p>
                         <h1 className="text-3xl font-bold text-gray-800 mb-2">Welcome Back</h1>
                         <p className="text-gray-500 text-center">Sign in to continue your journey</p>
                     </div>
